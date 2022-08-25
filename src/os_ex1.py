@@ -3,8 +3,6 @@ import os
 path=os.getcwd()
 print(path)
 
-print(os.listdir(path))
-
 os.chdir (path)
 
 os.mkdir('newDir')
