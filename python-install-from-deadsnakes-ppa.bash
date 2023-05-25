@@ -16,3 +16,7 @@ sudo update-alternatives --install /usr/bin/python3 python3 /usr/bin/python3.9 0
 sudo update-alternatives --config python3
 
 sudo update-alternatives --list python3
+
+# to fix issue
+# ImportError: Cannot import name 'sysconfig' from 'distutils'
+sudo apt-get -y install python3.9-distutils
