@@ -20,3 +20,8 @@ sudo update-alternatives --list python3
 # to fix issue
 # ImportError: Cannot import name 'sysconfig' from 'distutils'
 sudo apt-get -y install python3.9-distutils
+
+#
+pip3 install --upgrade setuptools
+pip3 install --upgrade pip
+pip3 install --upgrade distlib
