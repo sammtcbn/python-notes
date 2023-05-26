@@ -8,6 +8,7 @@ sudo apt-get -y install software-properties-common
 sudo add-apt-repository -y ppa:deadsnakes/ppa
 sudo apt -y update
 sudo apt-get -y install python3.9
+sudo apt-get -y install python3-pip
 
 sudo update-alternatives --list python3
 
