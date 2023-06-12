@@ -1,4 +1,4 @@
-# pip install Pillow
+# pip install pillow
 from PIL import Image
 from pathlib import Path
 
@@ -8,4 +8,4 @@ target_dir = home_dir / 'Pictures'
 
 for picpath in target_dir.glob('*.jpg'):
     img = Image.open(picpath)
-    print(f'{path.name} {img.width}x{img.height}')
+    print(f'{picpath} {img.width}x{img.height}')

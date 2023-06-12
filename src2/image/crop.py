@@ -1,4 +1,4 @@
-# pip install Pillow
+# pip install pillow
 from PIL import Image
 from pathlib import Path
 
