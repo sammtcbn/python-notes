@@ -3,7 +3,7 @@ set currdir=%~dp0
 IF "%currdir:~-1%"=="\" SET currdir=%currdir:~0,-1%
 cd /d "%currdir%"
 
-set dlver=3.10.6
+set dlver=3.11.4
 set dlfile=python-%dlver%.exe
 set dlurl=https://www.python.org/ftp/python/%dlver%/%dlfile%
 
