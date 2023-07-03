@@ -1,4 +1,4 @@
-fp = open("note.txt", "r")
+fp = open("readlines.txt", "r")
 if fp != None:
     print ("file open successly")
     lst1 = fp.readlines()
