@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Settings>
+  <BaseSettings>
+    <ServerIP>192.168.1.2</ServerIP>
+    <ServerPort>1883</ServerPort>
+  </BaseSettings>
+  <Profiles>
+    <DeviceName>DESKTOP-1234567</DeviceName>
+    <SWVersion>1.2.3.4</SWVersion>
+    <UserName>Sam</UserName>
+  </Profiles>
+</Settings>
