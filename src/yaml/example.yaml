@@ -2,3 +2,25 @@ fruits:
   apple: red
   pear: green
   banana: yellow
+
+animal:
+  big:
+    dog: purple
+    rabbit: white
+  small:
+    mouse: gray
+    bird: blue
+    ant: black
+
+book:
+  chinese:
+    book1:
+      page: 100
+      author: sam
+    book2:
+      page: 200
+      author: terry
+  english:
+    book3:
+      page: 300
+      author: helen
