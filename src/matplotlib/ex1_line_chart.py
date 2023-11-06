@@ -1,6 +1,8 @@
 # pip install matplotlib
 import matplotlib.pyplot as plt
 
-plt.plot([1,20,2,5])
+x = [1, 2, 3, 4, 5]
+y = [1, 2, 4, 8, 16]
+plt.plot(x,y)
 plt.ylabel('mytest')
 plt.show()
