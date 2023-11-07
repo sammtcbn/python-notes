@@ -1,7 +1,7 @@
 # pip install paramiko
 import paramiko
 
-def update_file_to_ssh_server(fn, ip, user, pwd, destdir):
+def update_file_to_ssh_server(ip, user, pwd, fn, destdir):
     ret = False
 
     ssh = paramiko.SSHClient()
@@ -24,11 +24,12 @@ def update_file_to_ssh_server(fn, ip, user, pwd, destdir):
     return ret
 
 def main():
-    myfile = "report.txt"
     serverip = "192.168.0.4"
     userid = "sam"
     userpwd = "1234"
-    update_file_to_ssh_server(myfile, serverip, userid, userpwd, "/tmp")
+    myfile = "report.txt"
+    destdir = "/tmp"
+    update_file_to_ssh_server(serverip, userid, userpwd, myfile, destdir)
 
 if __name__ == '__main__':
     main()

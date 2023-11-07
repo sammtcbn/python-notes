@@ -23,7 +23,8 @@ def main():
     serverip = "192.168.0.4"
     userid = "sam"
     userpwd = "1234"
-    ssh_run_cmd(serverip, userid, userpwd, "rm /tmp/report.txt")
+    mycmd = "rm /tmp/report.txt"
+    ssh_run_cmd(serverip, userid, userpwd, mycmd)
 
 if __name__ == '__main__':
     main()
