@@ -10,10 +10,8 @@ def main():
                 keylist.append(k)
             for v in content['fruits'].values():
                 valuelist.append(v)
-            print(keylist)
-            # ['apple', 'pear', 'banana']
-            print(valuelist)
-            # ['red', 'green', 'yellow']
+            print(keylist)     # ['apple', 'pear', 'banana']
+            print(valuelist)   # ['red', 'green', 'yellow']
         except yaml.YAMLError as exc:
             print(exc)
 
