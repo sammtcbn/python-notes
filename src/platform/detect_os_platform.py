@@ -12,3 +12,7 @@ elif os == "Windows":
     print("test in Windows")
 else:
     print("Unsupported Platform")
+
+print("release:  ", platform.release())
+print("version:  ", platform.version())
+print("platform: ", platform.platform())
