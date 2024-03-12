@@ -5,17 +5,17 @@ def main():
     cmd = "date"
 
     try:
-        status, output = subprocess.getstatusoutput (cmd)
+        exit_code, output = subprocess.getstatusoutput (cmd)
+
+        if exit_code == 0:
+            print("Execute '{}' successful".format(cmd))
+            print("output is " + output)
+        else:
+            print("Execute '{}' fail".format(cmd))
+            print(f"Execution failed with exit code: {exit_code}")
+
     except Exception as e:
-        print(e)
-
-    print (status)
-    print ("output is " + output)
-
-    if status != 0:
-        print("Execute '{}' fail".format(cmd))
-    else:
-        print("Execute '{}' pass".format(cmd))
+        print(f"An exception occurred: {e}")
 
 if __name__ == '__main__':
     main()
