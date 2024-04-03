@@ -11,6 +11,9 @@ def main():
     except:
         sys.exit ("Error opening port")
 
+    #if(ser.isOpen() == True):
+    #    print("Serial port opened")
+
     print("Serial port opened")
 
     session = pexpect.fdpexpect.fdspawn(ser, timeout=10)
