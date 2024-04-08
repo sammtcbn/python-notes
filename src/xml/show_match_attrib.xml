@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Settings>
+  <Profiles>
+    <DeviceName>DESKTOP-1234567</DeviceName>
+    <User1_ID description="this is description 1" studentid="1" />
+    <User2_ID description="this is description 1" studentid="2" />
+    <User3_ID description="this is description 1" studentid="99" />
+    <User4_ID description="this is description 1" studentid="45" />
+  </Profiles>
+</Settings>
