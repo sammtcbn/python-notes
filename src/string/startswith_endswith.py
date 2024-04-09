@@ -10,8 +10,12 @@ print(str1.endswith("d"))     # True
 print(str1.endswith("123"))   # False
 
 
-str2 = "Ubuntu"
 # use tuple as parameter
-#print(str2.startswith("Centos", "Ubuntu", "SUSE")) # this will fail, below is correct usage for tuple
+str2 = "Ubuntu"
+
+#print(str2.startswith("Centos", "Ubuntu", "SUSE")) # this will fail
+
+# Syntax: string.startswith(value, start, end)
+# below is correct usage for tuple
 print(str2.startswith(("Centos", "Ubuntu", "SUSE"))) # True
 
