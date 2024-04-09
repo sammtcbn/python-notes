@@ -22,10 +22,14 @@ def inc():
     v=v+1
     return v
 
-print_msg()
-empty_func
-print ("sum = ", sum_func(3,5))
-print ("cal = ", cal_func(3,5))
-print ("cal = ", cal2_func(3))
-print ("gVal = ", inc())
+def main():
+    print_msg()                      # Hello World
+    empty_func
+    print ("sum  = ", sum_func(3,5)) # sum  =  8
+    print ("cal  = ", cal_func(3,5)) # cal  =  (4, 6)
+    print ("cal  = ", cal2_func(3))  # cal  =  (4, 11)
+    print ("gVal = ", inc())         # gVal =  2
+
+if __name__ == '__main__':
+    main()
 
