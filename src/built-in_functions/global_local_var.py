@@ -8,6 +8,7 @@ def func1():
 
 def func2():
     print ("v = ", v)
+    # print ("b = ", b)  # this will fail
     print ("Local variables:", locals())
 
 def func3():

@@ -1,11 +1,19 @@
 # pip uninstall serial
 # pip uninstall pyserial
 # pip install pyserial
+# ignore upper , just use apt install -y python3-serial
 import serial
 import time
+import sys
 
 # Open the serial port
-ser = serial.Serial('/dev/ttyUSB0', 115200, timeout=1)  # Modify according to your serial port and baud rate
+try:
+    print("Open serial port ...")
+    ser = serial.Serial('/dev/ttyUSB0', 115200, timeout=1)  # Modify according to your serial port and baud rate
+except:
+    sys.exit ("Error opening port")
+
+print("Serial port opened")
 
 expected_string = "booting is done"
 timeout = 300  # Timeout in seconds (5 minutes)
