@@ -4,10 +4,10 @@ import os
 progname = "template"
 progver = "1.0.0"
 
-workdir = os.getcwd()
-
 def main():
+    workdir = os.getcwd()
     print(progname + " v" + progver)
     print("workdir - " + workdir)
 
-main()
+if __name__ == '__main__':
+    main()
