@@ -2,7 +2,7 @@ def bubblesort(data):
     cnt = len(data)
     print("cnt is", cnt) 
     for i in range(cnt-2):
-        print("rount ", i+1)
+        print("round ", i+1)
         for j in range(cnt-i-1):
             if data[j] > data[j+1]:
                 data[j], data[j+1] = data[j+1], data[j]
