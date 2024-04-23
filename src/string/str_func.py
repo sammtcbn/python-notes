@@ -13,11 +13,6 @@ str2="123"
 print(str2.isdigit())
 print(len(str2))
 
-str3="ab;cdef;ghijkl;mno"
-str3Arr = str3.split(";")
-for a in str3Arr:
-    print(a)
-
 ''' Result:
 
 $ python3 str_func.py
@@ -32,9 +27,5 @@ o
 H
 True
 3
-ab
-cdef
-ghijkl
-mno
 
 '''
