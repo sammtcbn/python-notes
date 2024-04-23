@@ -29,22 +29,3 @@ def main():
 if __name__ == '__main__':
     main()
 
-"""
-Result:
-
-[Main] start
-[Thread1] start
-[Thread1] aaa
-[Thread2] start
-[Thread2] bbbbb
-[Main] ...
-[Thread1] aaa
-[Thread2] bbbbb
-[Thread1] aaa
-[Thread2] bbbbb
-[Thread1] bye
-[Thread2] bbbbb
-[Thread2] bbbbb
-[Thread2] bye
-[Main] bye
-"""
