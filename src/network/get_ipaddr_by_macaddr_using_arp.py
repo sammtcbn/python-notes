@@ -9,6 +9,9 @@ def get_ipaddr_by_macaddr_using_arp(macaddr):
         if exit_code == 0:
             #print("Execute successful")
             #print("output is " + output)
+            if "not found" in output:
+                #print("command not found")
+                return None
             if len(output) < 7:
                 return None
             return output
