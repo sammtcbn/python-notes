@@ -1,7 +1,8 @@
+# need root to run
 import subprocess
 
-def get_ipaddr_by_macaddr_using_arp(macaddr):
-    cmd = "arp -n | grep {} | sort -u | awk '{{print $1}}'".format(macaddr)
+def get_ipaddr_by_macaddr_using_nmap(subnet, macaddr):
+    cmd = "nmap -sP  {} | grep -i {} -B2 | grep \"Nmap scan report for\" | awk 'BEGIN {{FS=\"for\"}} {{print $2}}' | awk '{{print $2}}' | tr -d '()'".format(subnet, macaddr)
     #print("cmd is {}".format(cmd))
     try:
         exit_code, output = subprocess.getstatusoutput (cmd)
@@ -25,7 +26,8 @@ def get_ipaddr_by_macaddr_using_arp(macaddr):
 
 def main():
     macaddr="11:22:33:44:55:66"
-    ipaddr=get_ipaddr_by_macaddr_using_arp(macaddr)
+    subnet="192.168.1.0/24"
+    ipaddr=get_ipaddr_by_macaddr_using_nmap(subnet, macaddr)
     if ipaddr:
         print("ip addr is:{}".format(ipaddr))
     else:
