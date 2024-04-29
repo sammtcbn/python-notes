@@ -2,7 +2,7 @@
 import subprocess
 
 def get_ipaddr_by_macaddr_using_nmap(subnet, macaddr):
-    cmd = "nmap -sP  {} | grep -i {} -B2 | grep \"Nmap scan report for\" | awk 'BEGIN {{FS=\"for\"}} {{print $2}}' | awk '{{print $2}}' | tr -d '()'".format(subnet, macaddr)
+    cmd = "nmap -sP  {} | grep -i {} -B2 | grep \"Nmap scan report for\" | awk 'BEGIN {{FS=\"for\"}} {{print $2}}' | tr -d ' ()'".format(subnet, macaddr)
     #print("cmd is {}".format(cmd))
     try:
         exit_code, output = subprocess.getstatusoutput (cmd)
