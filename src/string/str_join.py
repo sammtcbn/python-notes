@@ -29,4 +29,4 @@ print(str5)                  # is awesome Python
 str_list3 = ["I", "am", "Sam"]
 result = " | ".join(str_list3)
 print(result)                # I | am | Sam
-
+print("|".join(str_list3))   # I|am|Sam
