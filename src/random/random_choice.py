@@ -14,3 +14,6 @@ print(random.choice(tuple1))
 
 set1 = {"Vue", "Angular", "React"}
 #print(random.choice(set1))         # TypeError: 'set' object is not subscriptable
+
+# generate a random number between 0 and 9, exclude 2, 5, 7
+print(random.choice([i for i in range(0,9) if i not in [2,5,7]]))
