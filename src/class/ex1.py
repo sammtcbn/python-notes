@@ -9,15 +9,9 @@ class Student:
 studenta = Student('Sam')
 studentb = Student('Bob')
 
-print (studenta.name)
-print (studentb.name)
+print (studenta.name)   # Sam
+print (studentb.name)   # Bob
 
-studenta.introduce()
-studentb.introduce()
+studenta.introduce()    # My name is Sam
+studentb.introduce()    # My name is Bob
 
-''' Result:
-Sam
-Bob
-My name is Sam
-My name is Bob
-'''
