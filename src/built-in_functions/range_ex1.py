@@ -1,3 +1,5 @@
+# range office doc - https://docs.python.org/3/library/functions.html#func-range
+
 v=range(0,9)
 print(v)             # range(0, 9)
 print(type(v))       # <class 'range'>
