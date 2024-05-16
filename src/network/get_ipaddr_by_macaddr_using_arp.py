@@ -1,7 +1,13 @@
 import subprocess
 
 def get_ipaddr_by_macaddr_using_arp(macaddr):
-    cmd = "arp -n | grep {} | sort -u | awk '{{print $1}}'".format(macaddr)
+    # method 1
+    # cmd = "arp -n | grep {} | sort -u | awk '{{print $1}}'".format(macaddr)
+
+    # method 2
+    # arp -n | awk '/11:22:33:44:55:66/ {print $1;exit}'
+    cmd = "arp -n | awk '/{}/ {{print $1 ;exit}}'".format(macaddr)
+
     #print("cmd is {}".format(cmd))
     try:
         exit_code, output = subprocess.getstatusoutput (cmd)
