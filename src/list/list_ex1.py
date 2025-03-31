@@ -69,6 +69,7 @@ print("lst6 = ", lst6)
 print("soft lst6")
 lst6.sort()
 print("lst6 = ", lst6)
+print("smallest number in lst6:",lst6[0])
 
 print("reverse")
 lst6.reverse()
